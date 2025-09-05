@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }} | {{ page.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <!-- Font Awesome图标（用于社交链接） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <div class="container">
+    <!--  Sidebar（头像+社交链接） -->
+    <aside class="sidebar">
+      <div class="avatar-wrap">
+        <img src="{{ site.avatar | relative_url }}" alt="Avatar" class="avatar">
+      </div>
+      <div class="contact">
+        <p><i class="fa fa-envelope"></i> {{ site.email }}</p>
+      </div>
+      <div class="social-links">
+        {% for link in site.social_links %}
+          <p>
+            <i class="fa fa-{{ link.icon }}"></i>
+            <a href="{{ link.url | relative_url }}" target="_blank">{{ link.name }}</a>
+          </p>
+        {% endfor %}
+      </div>
+    </aside>
+
+    <!-- 右侧 Main Content（导航栏+页面内容） -->
+    <main class="main-content">
+      <!-- 导航栏 -->
+      <nav class="navbar">
+        {% for item in site.nav %}
+          <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+
+      <!-- 页面内容（来自Markdown文件的{{ content }}） -->
+      <div class="content">
+        {{ content }}
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+# 站点基本信息
+title: TIANYAO TAN
+description: Personal website of Tianyao Tan (Steven), a Physics student at HKUST.
+author:
+  name: Tianyao Tan
+  email: ttanag@connect.ust.hk
+
+# GitHub Pages
+url: "https://peninsula824.github.io/TianyaoHomes.github.io/"  # GitHub Pages
+baseurl: "/cv"                          # 项目页路径
+permalink: "/:title/"                   # 文章链接格式
+
+#  markdown引擎
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# 导航栏（对应示例中的ABOUT ME、PUBLICATIONS等）
+nav:
+  - name: "ABOUT ME"
+    url: "/"
+  - name: "PUBLICATIONS"
+    url: "/publications"
+  - name: "AWARDS"
+    url: "/awards"
+  - name: "HOBBIES"
+    url: "/hobbies"
+  - name: "BLOGS"
+    url: "/blogs"
+  - name: "中文"
+    url: "/zh/"  #
+
+# 社交链接与联系方式（左侧栏）
+social_links:
+  - name: "My CV"
+    icon: "file-pdf"          # Font Awesome图标（无需前缀`fa-`）
+    url: "/assets/pdf/Tan Tianyao_CV.pdf" # 
+  - name: "Twitter"
+    icon: "twitter"
+    url: ""
+  - name: "LinkedIn"
+    icon: "linkedin"
+    url: ""
+  - name: "GitHub"
+    icon: "github"
+    url: "https://github.com/peninsula824"
+  - name: "Google Scholar"
+    icon: "google-scholar"    # Font Awesome 6+支持此图标
+    url: ""
+  - name: "ResearchGate"
+    icon: "researchgate"
+    url: ""
+  - name: "Zhihu"
+    icon: "zhihu"             # Font Awesome 6+支持此图标
+    url: ""
+  - name: "RedNote"
+    icon: "book"              # 若RedNote无官方图标，用类似图标代替
+    url: ""
+  - name: "Bilibili"
+    icon: "bilibili"          # Font Awesome 6+支持此图标
+    url: ""
+
+# 头像与邮箱（左侧栏）
+avatar: "/assets/images/avatar.jpg"  # 头像路径（需提前上传）
+email: "ttanag@connect.ust.hk"             # 邮箱地址
+
+# 主题
+# theme: minima
