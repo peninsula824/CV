@@ -6,8 +6,8 @@ author:
   email: ttanag@connect.ust.hk
 
 # GitHub Pages
-url: "https://peninsula824.github.io/TianyaoHomes.github.io/"  # GitHub Pages
-baseurl: "/cv"                          # 项目页路径
+url: "https://peninsula824.github.io"  # GitHub Pages
+baseurl: "/TianyaoHomes.github.io"                          # 项目页路径
 permalink: "/:title/"                   # 文章链接格式
 
 #  markdown引擎
